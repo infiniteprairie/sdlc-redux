@@ -1,0 +1,13 @@
+openapi: 3.0.0
+info:
+  title: SDLC
+  version: '1.0'
+  description: API driven Solution Delivery Lifecycle (SDLC) process
+  contact:
+    name: Darrell Rials
+    email: darrell@infiniteprairie.com
+servers:
+  - url: 'http://localhost:3000'
+paths: {}
+components:
+  schemas: {}
