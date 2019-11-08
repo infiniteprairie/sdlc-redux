@@ -10,4 +10,42 @@ servers:
   - url: 'http://localhost:3000'
 paths: {}
 components:
-  schemas: {}
+  schemas:
+    Participant:
+      title: Participant
+      type: object
+      description: The Participant model represents the collection of people (and systems) that participate in the SDLC process
+      x-examples:
+        example-1: {}
+      properties:
+        id:
+          type: string
+        lastName:
+          type: string
+        firstName:
+          type: string
+      required:
+        - id
+        - lastName
+        - firstName
+    Artifact:
+      title: Artifact
+      type: object
+      properties:
+        id:
+          type: string
+      description: The Artifact model represents a singular work product that is produced (or used) in a Release
+    Release:
+      title: Release
+      type: object
+      properties:
+        id:
+          type: string
+      description: The Release model represents that collection of Artifacts that comprise a product increment
+    Stage:
+      title: Stage
+      type: object
+      properties:
+        id:
+          type: string
+      description: The Stage model represents the various stages the Release undergoes in the SDLC
